@@ -1,7 +1,7 @@
 {
-    "name": "craffft/translation-fields-bundle",
+    "name": "schachbulle/translation-fields-bundle",
     "type": "contao-bundle",
-    "description": "Translation fields for Contao OpenSource CMS",
+    "description": "Übersetzungsfelder für Contao OpenSource CMS",
     "keywords": ["translate", "translation", "fields"],
     "homepage":"https://craffft.de",
     "license": "MIT",
@@ -12,8 +12,8 @@
         }
     ],
     "support": {
-        "issues": "https://github.com/Craffft/translation-fields-bundle/issues",
-        "source": "https://github.com/Craffft/translation-fields-bundle"
+        "issues": "https://github.com/Samson1964/translation-fields-bundle/issues",
+        "source": "https://github.com/Samson1964/translation-fields-bundle"
     },
     "require": {
         "php":"^7.1 || ^8.0",
@@ -27,11 +27,11 @@
         "contao/manager-plugin": "<2.0 || >=3.0"
     },
     "extra": {
-        "contao-manager-plugin": "Craffft\\TranslationFieldsBundle\\ContaoManager\\Plugin"
+        "contao-manager-plugin": "Schachbulle\\TranslationFieldsBundle\\ContaoManager\\Plugin"
     },
     "autoload": {
         "psr-4": {
-            "Craffft\\TranslationFieldsBundle\\": "src/"
+            "Schachbulle\\TranslationFieldsBundle\\": "src/"
         }
     }
 }

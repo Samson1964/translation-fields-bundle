@@ -1,8 +1,8 @@
 services:
-    craffft.translation_fields.service.languages:
-        class: Craffft\TranslationFieldsBundle\Service\Languages
+    schachbulle.translation_fields.service.languages:
+        class: Schachbulle\TranslationFieldsBundle\Service\Languages
         public: true
 
-    craffft.translation_fields.service.translator:
-        class: Craffft\TranslationFieldsBundle\Service\Translator
+    schachbulle.translation_fields.service.translator:
+        class: Schachbulle\TranslationFieldsBundle\Service\Translator
         public: true

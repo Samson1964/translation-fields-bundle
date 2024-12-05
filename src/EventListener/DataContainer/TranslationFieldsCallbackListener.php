@@ -9,7 +9,7 @@
  * file that was distributed with this source code.
  */
 
-namespace Craffft\TranslationFieldsBundle\EventListener\DataContainer;
+namespace Schachbulle\TranslationFieldsBundle\EventListener\DataContainer;
 
 use Contao\Controller;
 use Contao\CoreBundle\ServiceAnnotation\Callback;

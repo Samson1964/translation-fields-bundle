@@ -9,10 +9,10 @@
  * file that was distributed with this source code.
  */
 
-namespace Craffft\TranslationFieldsBundle\Util;
+namespace Schachbulle\TranslationFieldsBundle\Util;
 
 use Contao\Database;
-use Craffft\TranslationFieldsBundle\Service\Languages;
+use Schachbulle\TranslationFieldsBundle\Service\Languages;
 use TranslationFields\TranslationFieldsModel;
 
 class Updater

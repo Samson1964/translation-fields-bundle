@@ -23,6 +23,6 @@ ClassLoader::addNamespaces(array
 ClassLoader::addClasses(array
 (
     // Models
-    'TranslationFields\TranslationFieldsModel'         => 'vendor/craffft/translation-fields-bundle/src/Resources/contao/models/TranslationFieldsModel.php',
-    'TranslationFields\TranslationFieldsPageModel'     => 'vendor/craffft/translation-fields-bundle/src/Resources/contao/models/TranslationFieldsPageModel.php',
+    'TranslationFields\TranslationFieldsModel'         => 'vendor/schachbulle/translation-fields-bundle/src/Resources/contao/models/TranslationFieldsModel.php',
+    'TranslationFields\TranslationFieldsPageModel'     => 'vendor/schachbulle/translation-fields-bundle/src/Resources/contao/models/TranslationFieldsPageModel.php',
 ));

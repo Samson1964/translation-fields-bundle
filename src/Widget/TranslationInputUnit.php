@@ -9,11 +9,11 @@
  * file that was distributed with this source code.
  */
 
-namespace Craffft\TranslationFieldsBundle\Widget;
+namespace Schachbulle\TranslationFieldsBundle\Widget;
 
 use Contao\InputUnit;
-use Craffft\TranslationFieldsBundle\Service\Languages;
-use Craffft\TranslationFieldsBundle\Util\WidgetUtil;
+use Schachbulle\TranslationFieldsBundle\Service\Languages;
+use Schachbulle\TranslationFieldsBundle\Util\WidgetUtil;
 use TranslationFields\TranslationFieldsModel;
 
 class TranslationInputUnit extends InputUnit

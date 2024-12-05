@@ -9,9 +9,9 @@
  * file that was distributed with this source code.
  */
 
-namespace Craffft\TranslationFieldsBundle\Util;
+namespace Schachbulle\TranslationFieldsBundle\Util;
 
-use Craffft\TranslationFieldsBundle\Service\Languages;
+use Schachbulle\TranslationFieldsBundle\Service\Languages;
 
 class WidgetUtil
 {

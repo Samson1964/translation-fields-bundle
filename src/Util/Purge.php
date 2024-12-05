@@ -9,7 +9,7 @@
  * file that was distributed with this source code.
  */
 
-namespace Craffft\TranslationFieldsBundle\Util;
+namespace Schachbulle\TranslationFieldsBundle\Util;
 
 use Contao\Controller;
 use Contao\Database;

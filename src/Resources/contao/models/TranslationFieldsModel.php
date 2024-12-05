@@ -11,7 +11,7 @@
 
 namespace TranslationFields;
 
-use Craffft\TranslationFieldsBundle\Util\WidgetUtil;
+use Schachbulle\TranslationFieldsBundle\Util\WidgetUtil;
 
 class TranslationFieldsModel extends \Model
 {

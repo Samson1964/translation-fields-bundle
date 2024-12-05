@@ -9,13 +9,13 @@
  * file that was distributed with this source code.
  */
 
-namespace Craffft\TranslationFieldsBundle;
+namespace Schachbulle\TranslationFieldsBundle;
 
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 
 /**
- * Configures the Craffft Translation Fields Bundle.
+ * Configures the Schachbulle Translation Fields Bundle.
  */
-class CraffftTranslationFieldsBundle extends Bundle
+class SchachbulleTranslationFieldsBundle extends Bundle
 {
 }

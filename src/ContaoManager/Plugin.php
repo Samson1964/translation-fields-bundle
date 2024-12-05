@@ -11,20 +11,20 @@
 
 declare(strict_types=1);
 
-namespace Craffft\TranslationFieldsBundle\ContaoManager;
+namespace Schachbulle\TranslationFieldsBundle\ContaoManager;
 
 use Contao\CoreBundle\ContaoCoreBundle;
 use Contao\ManagerPlugin\Bundle\BundlePluginInterface;
 use Contao\ManagerPlugin\Bundle\Config\BundleConfig;
 use Contao\ManagerPlugin\Bundle\Parser\ParserInterface;
-use Craffft\TranslationFieldsBundle\CraffftTranslationFieldsBundle;
+use Schachbulle\TranslationFieldsBundle\SchachbulleTranslationFieldsBundle;
 
 class Plugin implements BundlePluginInterface
 {
     public function getBundles(ParserInterface $parser)
     {
         return [
-            BundleConfig::create(CraffftTranslationFieldsBundle::class)
+            BundleConfig::create(SchachbulleTranslationFieldsBundle::class)
                 ->setLoadAfter([ContaoCoreBundle::class])
                 ->setReplace(['translation-fields']),
         ];

@@ -9,7 +9,7 @@
  * file that was distributed with this source code.
  */
 
-namespace Craffft\TranslationFieldsBundle\DependencyInjection;
+namespace Schachbulle\TranslationFieldsBundle\DependencyInjection;
 
 use Symfony\Component\Config\Definition\Builder\TreeBuilder;
 use Symfony\Component\Config\Definition\ConfigurationInterface;

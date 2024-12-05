@@ -9,14 +9,14 @@
  * file that was distributed with this source code.
  */
 
-define('CRAFFFT_TRANSLATION_FIELDS_PUBLIC_PATH', 'bundles/crafffttranslationfields');
+define('SCHACHBULLE_TRANSLATION_FIELDS_PUBLIC_PATH', 'bundles/schachbulletranslationfields');
 
 /**
  * Add CSS and JavaScript files
  */
 if (TL_MODE == 'BE') {
-    $GLOBALS['TL_CSS'][] = CRAFFFT_TRANSLATION_FIELDS_PUBLIC_PATH . '/css/translationfields.css';
-    $GLOBALS['TL_JAVASCRIPT'][] = CRAFFFT_TRANSLATION_FIELDS_PUBLIC_PATH . '/js/translationfields.js';
+    $GLOBALS['TL_CSS'][] = SCHACHBULLE_TRANSLATION_FIELDS_PUBLIC_PATH . '/css/translationfields.css';
+    $GLOBALS['TL_JAVASCRIPT'][] = SCHACHBULLE_TRANSLATION_FIELDS_PUBLIC_PATH . '/js/translationfields.js';
 }
 
 /**
@@ -50,7 +50,7 @@ array_insert($GLOBALS['BE_MOD']['system'], 7, array
     'translations' => array
     (
         'tables' => array('tl_translation_fields'),
-        'icon'   => 'bundles/crafffttranslationfields/images/translation-icon.png',
+        'icon'   => 'bundles/schachbulletranslationfields/images/translation-icon.png',
     )
 ));
 
@@ -72,9 +72,9 @@ array_insert($GLOBALS['BE_MOD']['system'], 7, array
  * field is rendered. The class "FieldClass1" has to be stored in a file named
  * "FieldClass1.php" in your module folder.
  */
-$GLOBALS['BE_FFL']['TranslationInputUnit'] = '\\Craffft\\TranslationFieldsBundle\\Widget\\TranslationInputUnit';
-$GLOBALS['BE_FFL']['TranslationTextArea'] = '\\Craffft\\TranslationFieldsBundle\\Widget\\TranslationTextArea';
-$GLOBALS['BE_FFL']['TranslationTextField'] = '\\Craffft\\TranslationFieldsBundle\\Widget\\TranslationTextField';
+$GLOBALS['BE_FFL']['TranslationInputUnit'] = '\\Schachbulle\\TranslationFieldsBundle\\Widget\\TranslationInputUnit';
+$GLOBALS['BE_FFL']['TranslationTextArea'] = '\\Schachbulle\\TranslationFieldsBundle\\Widget\\TranslationTextArea';
+$GLOBALS['BE_FFL']['TranslationTextField'] = '\\Schachbulle\\TranslationFieldsBundle\\Widget\\TranslationTextField';
 
 /**
  * PURGE JOBS
@@ -102,6 +102,6 @@ $GLOBALS['BE_FFL']['TranslationTextField'] = '\\Craffft\\TranslationFieldsBundle
  */
 $GLOBALS['TL_PURGE']['tables']['translation_fields'] = array
 (
-    'callback' => array('\\Craffft\\TranslationFieldsBundle\\Util\\Purge', 'purgeTranslationFields'),
+    'callback' => array('\\Schachbulle\\TranslationFieldsBundle\\Util\\Purge', 'purgeTranslationFields'),
     'affected' => array('tl_translation_fields')
 );
