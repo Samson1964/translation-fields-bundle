@@ -101,7 +101,7 @@ class TranslationTextField extends TextField
         $this->varValue = TranslationFieldsModel::getTranslationsByFid($this->varValue);
 
         /* @var $objLanguages Languages */
-        $objLanguages = \System::getContainer()->get('craffft.translation_fields.service.languages');
+        $objLanguages = \System::getContainer()->get('schachbulle.translation_fields.service.languages');
         $arrLngInputs = $objLanguages->getLanguageKeys();
 
         $arrFields = array();

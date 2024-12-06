@@ -26,6 +26,6 @@ class Configuration implements ConfigurationInterface
      */
     public function getConfigTreeBuilder()
     {
-        return new TreeBuilder('craffft_translation_fields');
+        return new TreeBuilder('schachbulle_translation_fields');
     }
 }

@@ -55,14 +55,14 @@ class WidgetUtil
     public static function getCurrentTranslationLanguageButton()
     {
         /* @var $objLanguages Languages */
-        $objLanguages = \System::getContainer()->get('craffft.translation_fields.service.languages');
+        $objLanguages = \System::getContainer()->get('schachbulle.translation_fields.service.languages');
         $arrLanguageKeys = $objLanguages->getLanguageKeys();
         $strFlagname = (strtolower(strlen($arrLanguageKeys[0]) > 2 ? substr($arrLanguageKeys[0], -2) : $arrLanguageKeys[0]));
 
         // Set empty flagname, if flag doesn't exist
         if (!file_exists(sprintf('%s/web/%s/images/flag-icons/%s.png',
             TL_ROOT,
-            CRAFFFT_TRANSLATION_FIELDS_PUBLIC_PATH,
+            SCHACHBULLE_TRANSLATION_FIELDS_PUBLIC_PATH,
             $strFlagname))
         ) {
             $strFlagname = 'xx';
@@ -72,7 +72,7 @@ class WidgetUtil
 
         // Generate current translation language button
         $strButton = sprintf('<span class="tf_button"><img src="%s/images/flag-icons/%s.png" width="16" height="11" alt="%s"></span>',
-            CRAFFFT_TRANSLATION_FIELDS_PUBLIC_PATH,
+            SCHACHBULLE_TRANSLATION_FIELDS_PUBLIC_PATH,
             $strFlagname,
             $arrLanguages[$arrLanguageKeys[0]]
         );
@@ -91,7 +91,7 @@ class WidgetUtil
         $i = 0;
 
         /* @var $objLanguages Languages */
-        $objLanguages = \System::getContainer()->get('craffft.translation_fields.service.languages');
+        $objLanguages = \System::getContainer()->get('schachbulle.translation_fields.service.languages');
         $arrLanguages = $objLanguages->getLanguages();
 
         foreach ($arrLanguages as $key => $value) {
@@ -100,14 +100,14 @@ class WidgetUtil
             // Set empty flagname, if flag doesn't exist
             if (!file_exists(sprintf('%s/web/%s/images/flag-icons/%s.png',
                 TL_ROOT,
-                CRAFFFT_TRANSLATION_FIELDS_PUBLIC_PATH,
+                SCHACHBULLE_TRANSLATION_FIELDS_PUBLIC_PATH,
                 $strFlagname))
             ) {
                 $strFlagname = 'xx';
             }
 
             $strLanguageIcon = sprintf('<img src="%s/images/flag-icons/%s.png" width="16" height="11" alt="%s">',
-                CRAFFFT_TRANSLATION_FIELDS_PUBLIC_PATH,
+                SCHACHBULLE_TRANSLATION_FIELDS_PUBLIC_PATH,
                 $strFlagname,
                 $value
             );

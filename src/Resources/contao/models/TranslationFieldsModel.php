@@ -54,7 +54,7 @@ class TranslationFieldsModel extends \Model
     public static function saveValuesAndReturnFid(array $arrValues, $intFid = 0)
     {
         /* @var $objLanguages Languages */
-        $objLanguages = \System::getContainer()->get('craffft.translation_fields.service.languages');
+        $objLanguages = \System::getContainer()->get('schachbulle.translation_fields.service.languages');
         $arrLanguageKeys = $objLanguages->getLanguageKeys();
 
         // Check if translation fields should not be empty saved
@@ -116,7 +116,7 @@ class TranslationFieldsModel extends \Model
     public static function getTranslationsByFid($intFid, $onlyActiveLanguages = false)
     {
         /* @var $objLanguages Languages */
-        $objLanguages = \System::getContainer()->get('craffft.translation_fields.service.languages');
+        $objLanguages = \System::getContainer()->get('schachbulle.translation_fields.service.languages');
         $arrData = $objLanguages->getLanguagesWithEmptyValue();
 
         if (is_numeric($intFid) && $intFid > 0) {

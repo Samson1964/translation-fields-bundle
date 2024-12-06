@@ -27,7 +27,7 @@ class Updater
         $objDatabase = Database::getInstance();
 
         /* @var $objLanguages Languages */
-        $objLanguages = \System::getContainer()->get('craffft.translation_fields.service.languages');
+        $objLanguages = \System::getContainer()->get('schachbulle.translation_fields.service.languages');
 
         // Backup the original column and then change the column type
         if (!$objDatabase->fieldExists($backup, $table, true)) {

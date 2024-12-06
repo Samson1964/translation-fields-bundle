@@ -116,7 +116,7 @@ class TranslationInputUnit extends InputUnit
         $this->varValue['value'] = TranslationFieldsModel::getTranslationsByFid($this->varValue['value']);
 
         /* @var $objLanguages Languages */
-        $objLanguages = \System::getContainer()->get('craffft.translation_fields.service.languages');
+        $objLanguages = \System::getContainer()->get('schachbulle.translation_fields.service.languages');
         $arrLngInputs = $objLanguages->getLanguageKeys();
 
         $arrFields = array();

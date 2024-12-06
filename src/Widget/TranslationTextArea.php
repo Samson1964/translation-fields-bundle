@@ -106,7 +106,7 @@ class TranslationTextArea extends TextArea
         $this->varValue = TranslationFieldsModel::getTranslationsByFid($this->varValue);
 
         /* @var $objLanguages Languages */
-        $objLanguages = \System::getContainer()->get('craffft.translation_fields.service.languages');
+        $objLanguages = \System::getContainer()->get('schachbulle.translation_fields.service.languages');
         $arrLngInputs = $objLanguages->getLanguageKeys();
 
         $arrFields = array();
@@ -161,7 +161,16 @@ class TranslationTextArea extends TextArea
 
         if (!empty($rte))
         {
-            list ($file, $type) = explode('|', $rte, 2);
+
+			if(strpos($rte, '|') !== false) 
+			{
+				list($file, $type) = explode('|', $rte, 2);
+			} 
+			else 
+			{
+				$file = $rte;
+				$type = '';
+			}
 
             $fileBrowserTypes = array();
             $pickerBuilder = \System::getContainer()->get('contao.picker.builder');
